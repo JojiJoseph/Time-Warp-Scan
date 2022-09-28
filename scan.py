@@ -9,7 +9,7 @@ parser.add_argument("-d","--direction",default="tb", choices=["tb", "bt","lr","r
 
 direction = parser.parse_args().direction
 
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(-1)
 
 ret, ref = cap.read()
 
